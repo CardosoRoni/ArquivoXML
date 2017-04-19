@@ -15,9 +15,6 @@ public class Aluno {
 	@XmlElementWrapper(name = "listaDeDisciplinas")
 	private List<Disciplina> disciplinas;
 
-	@XmlElementWrapper(name = "listaDeNotas")
-	private List<Nota> notas;
-
 	public Aluno() {
 	}
 
@@ -25,7 +22,7 @@ public class Aluno {
 		super();
 		this.nome = nome;
 		this.disciplinas = disciplinas;
-		this.notas = notas;
+	
 	}
 
 	public String getNome() {
@@ -36,8 +33,7 @@ public class Aluno {
 		return disciplinas;
 	}
 
-	public List<Nota> getNotas() {
-		return notas;
-	}
+	
+	
 
 }
